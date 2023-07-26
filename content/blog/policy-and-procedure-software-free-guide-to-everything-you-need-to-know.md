@@ -1,12 +1,12 @@
 ---
 title: "Policy and Procedure Software: Free Beginner’s Guide "
-date: 2023-04-22
+date: 2023-01-05
 author: Nik Aggarwal
 category:
   - Contract Management Software
 ---
 
-![Policy and Procedure Software: Free Beginner’s Guide](https://docucollab.com/wp-content/uploads/2023/01/policy-management-quick-guide-1.png)
+![Policy and Procedure Software: Free Beginner’s Guide](/img/blog/policy-management-quick-guide-1.png)
 
 ## What is policy and procedure software?
 

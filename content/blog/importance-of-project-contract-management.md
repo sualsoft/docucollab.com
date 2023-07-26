@@ -1,6 +1,6 @@
 ---
 title: Importance of Project contract management
-date: 2023-04-22
+date: 2023-04-21
 author: Nik Aggarwal
 category:
   - Contract Management Software

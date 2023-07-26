@@ -10,7 +10,7 @@
         {{ $paginator := .Paginate (where .Site.RegularPages "Section" "blog")
         }}
         <!---->
-        {{ range $paginator.Pages }}
+        {{ range $paginator.Pages.ByDate }}
         <div>
           <a
             href="{{.Permalink}}"
