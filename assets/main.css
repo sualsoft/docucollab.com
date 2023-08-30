@@ -70,3 +70,64 @@
   border-left: 4px solid #3b82f6;
   margin: 2rem 0rem;
 }
+.article article ol {
+  list-style-type: decimal;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.article article ol li {
+  margin-top: 1rem;
+}
+
+/*Carousel*/
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+.carousel-buttons {
+  position: absolute;
+  left: 30%;
+  transform: translateX(-25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.prev-btn,
+.next-btn {
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.prev-btn {
+  margin-right: 10px;
+}
+
+.next-btn {
+  margin-left: 10px;
+}
+
+@media (max-width: 770px) {
+  .carousel-buttons {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

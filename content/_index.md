@@ -3,16 +3,48 @@ title: "Hugo & Tailwind Dynamic Duo"
 layout: home
 
 hero_section:
-  title: Streamline for success - The ultimate contract
-  highlight: Management Software
-  content: Automate contract management and compliance with the best contract management software - DocuCollab
+  slide:
+    - title: Streamline for Success - The Ultimate Contract
+      highlight: Management Software
+      content: Automate contract management and compliance with best contract management software – DocuCollab
+      border_buton:
+        label: Learn More
+        link: /blog
+      primary_buton:
+        label: Book a Demo
+        link: /book-demo/
+
+    - title: No More Contract
+      highlight: Diaspora
+      content: Store and secure all your documents in one place. Avoid contract confusion and overcome management challenges with DocuCollab
+      border_buton:
+        label: Learn More
+        link: /blog
+      primary_buton:
+        label: Book a Demo
+        link: /book-demo/
+
+    - title: Create & Execute Proposals Instantly
+      highlight: Proposals Instantly
+      content: Let your proposals speak for your brand. Create and execute professional proposals instantly with DocuCollab
+      border_buton:
+        label: Learn More
+        link: /blog
+      primary_buton:
+        label: Book a Demo
+        link: /book-demo/
+
+    - title: Proposal Management Made
+      highlight: Simple
+      content: Create, collaborate, and customize proposals with DocuCollab. Manage your proposal process effectively.
+      border_buton:
+        label: Learn More
+        link:
+      primary_buton:
+        label: Book a Demo
+        link: /book-demo/
+
   hero_img: /img/hero-img.jpg
-  border_buton:
-    label: Learn More
-    link:
-  primary_buton:
-    label: Book a Demo
-    link: /book-demo/
 
 why_choose:
   title: Why Choose DocuCollab?
@@ -92,6 +124,6 @@ call_action_section:
   sub_title: Create execute proposal instantly
   image: /img/cta.jpg
   button:
-    link:  /book-demo/
+    link: /book-demo/
     label: BOOK A DEMO
 ---

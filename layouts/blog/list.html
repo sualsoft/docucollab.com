@@ -76,19 +76,99 @@
       </ul>
     </div>
 
-    <div class="col-span-1 md:col-span-1 lg:col-span-1 mb-12">
-      <h2 class="text-black dark:text-white font-bold text-lg">Book Demo</h2>
-      <h4 class="text-zinc-700 dark:text-zinc-300">
-        Helpful articles and <br />
-        resources that will help you <br />
-        agree better and faster.
+    <div class="col-span-1 px-6">
+      <h4
+        class="text-zinc-600 dark:text-zinc-100 font-bold text-xl lg:block md:block hidden"
+      >
+        Book a Demo
       </h4>
-      <br />
-      <a
-        href="/"
-        class="text-blue-400 flex gap-3 items-center hover:gap-5 transaction-speed"
-        >Book Now <i class="fa-sharp fa-solid fa-arrow-right"></i
-      ></a>
+      <iframe
+        src="https://BookingMitr.com/docucollab/discoverycall"
+        frameborder="0"
+        height="700px"
+        width="100%"
+        class="mt-3 lg:block md:block hidden"
+      ></iframe>
+
+      <!--Features post-->
+      <h4 class="text-zinc-600 dark:text-zinc-100 font-bold text-xl mt-12">
+        Recent Posts
+      </h4>
+
+      <hr class="border-zinc-600 my-2" />
+      <ul class="lg:block md:block hidden">
+        <li>
+          {{ $posts := .Site.GetPage "section" "blog" }}
+          <!---->
+          {{ range first 5 $posts.Pages }}
+          <a
+            href="{{.Permalink}}"
+            class="hover:underline dark:text-zinc-200 text-zinc-600"
+          >
+            <h3 class="text-md dark:text-zinc-200 text-zinc-600 font-bold mt-4">
+              {{.Title}}
+            </h3>
+            <div class="text-zinc-600 dark:text-zinc-100 py-3">
+              {{ $content := .Content }}
+              <!---->
+              {{ $words := split $content " " }}
+              <!---->
+              {{ $excerpt := "" }}
+              <!---->
+              {{ range $index, $word := $words }}
+              <!---->
+              {{ if lt $index 10 }}
+              <!---->
+              {{ $excerpt = printf "%s %s" $excerpt $word }}
+              <!---->
+              {{ end }}
+              <!---->
+              {{ end }}
+              <!---->
+              {{ $excerpt | safeHTML }}...
+            </div>
+            <hr class="border-zinc-700 w-2/3 mt-4 py-3" />
+          </a>
+          {{end}}
+        </li>
+      </ul>
+
+      <ul class="lg:hidden md:hidden block">
+        <li>
+          {{ $posts := .Site.GetPage "section" "blog" }}
+          <!---->
+          {{ range first 3 $posts.Pages }}
+          <a
+            href="{{.Permalink}}"
+            class="hover:underline dark:text-zinc-200 text-zinc-600"
+          >
+            <h3 class="text-md dark:text-zinc-200 text-zinc-600 font-bold mt-4">
+              {{.Title}}
+            </h3>
+            <div class="text-zinc-600 dark:text-zinc-100 py-3">
+              {{ $content := .Content }}
+              <!---->
+              {{ $words := split $content " " }}
+              <!---->
+              {{ $excerpt := "" }}
+              <!---->
+              {{ range $index, $word := $words }}
+              <!---->
+              {{ if lt $index 10 }}
+              <!---->
+              {{ $excerpt = printf "%s %s" $excerpt $word }}
+              <!---->
+              {{ end }}
+              <!---->
+              {{ end }}
+              <!---->
+              {{ $excerpt | safeHTML }}...
+            </div>
+            <hr class="border-zinc-700 w-2/3 mt-4 py-3" />
+          </a>
+          {{end}}
+        </li>
+      </ul>
     </div>
   </div>
 </div>
