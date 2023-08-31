@@ -85,39 +85,39 @@ video_section:
 faqs:
   - q: Healthcare & Pharmaceuticals
     a: DocuCollab is designed to suit the business nature of Law firms and other such legal entities, where creating contracts is one of the fundamental activities. With the Contract Lifecycle Management Software from DocuCollab, attorneys and paralegal forces can streamline their contract creation processes and improve their productivity phenomenally.
-    link: /
+    link: /contract-management-software-for-healthcare-and-pharmaceuticals
 
   - q: Law Firms & Legal Entities
     a: DocuCollab is designed to suit the business nature of Law firms and other such legal entities, where creating contracts is one of the fundamental activities. With the Contract Lifecycle Management Software from DocuCollab, attorneys and paralegal forces can streamline their contract creation processes and improve their productivity phenomenally.
-    link:
+    link: /contract-management-software-for-law-firms-and-legal-entities
 
   - q: Manufacturing Industries
     a: Manufacturing industries of all levels, often face the challenge of contract mismanagement. DocuCollab is a simple and efficient platform that renders the users an enriching experience of improved contract management practices. With robust contract management software from DocuCollab, manufacturing companies can perform end-to-end contractual activities effectively.
-    link:
+    link: /contract-management-software-for-manufacturing-industries
 
   - q: FMCG
     a: The FMCG or the Fast Moving Consumer Goods market is one of the biggest industries with billions worth of turnover across the country. Contracts and subsidiary legal documents are an integral part of the FMCG sector, which requires intensive monitoring and management. The Contract Management Software from DocuCollab is an agile platform that simplifies and streamlines the process of managing contracts.
-    link:
+    link: /contract-management-software-for-fmcg
 
   - q: Information Technology
     a: In this digital era, it is imperative to leverage an agile CLM software system in expediting processes. DocuCollab’s advanced contract management software tools assist the IT sector in automating their key operations completely. The unified platform enables users to stay ahead of contract developments, thereby improving the productivity of the contract team.
-    link:
+    link: /contract-management-software-for-information-technology
 
   - q: Construction & Real Estate
     a: A minor lapse in the management of contracts can reflect adversely on the organization. Especially, the construction and real estate sectors deal with a considerable amount of lawsuits due to contract negligence and manual errors. DocuCollab is structured to help users to create, manage, and execute contracts effectively, thereby helping companies to take the lead in managing contracts
-    link:
+    link: /contract-management-software-for-construction-and-real-estate
 
   - q: Sales & Marketing
     a: Sales & Marketing sectors comprise contracts of varying levels of importance. The one big challenge that the sales team and marketers face is the disorganization of documents, which leads to severe consequences. DocuCollab eliminates the risk pertaining to document misplacement/data loss. The contract management software enables users to organize documents categorically.
-    link:
+    link: /contract-management-software-for-sales-and-marketing
 
   - q: Procurement & Sourcing
     a: Contracts are an integral part of the procurement and sourcing departments and require expert-level administration for its seamless functioning. DocuCollab’s agile contract management software is the ideal platform for companies to create, manage, control, and execute contracts instantly. From categorically organizing documents to negotiating effortlessly, DocuCollab’s beneficial features make it the best choice for procurement & sourcing companies.
-    link: /
+    link: /contract-management-software-for-procurement-and-sourcing-departments
 
   - q: Human Resource
     a: Human resources involve hiring candidates and maintaining a repository, where the information of the workforce is diligently recorded. To ensure that the contracts that tie the workforce with the company don’t scatter, it is prudent to utilize the contract management software from DocuCollab. With DocuCollab, the Human resources department/agency can efficiently manage and monitor contracts.
-    link: /
+    link: /contract-management-software-for-human-resource-management
 
 call_action_section:
   title: Close Deals Faster, Improve Team Productivity & Eliminate Risks with DocuCollab

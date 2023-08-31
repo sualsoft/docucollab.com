@@ -1,0 +1,166 @@
+{{define "main"}}
+<!--Hero Section-->
+{{ with .Params.hero_section}}
+<section
+  class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 justify-center items-center mb-16"
+>
+  <div class="">
+    <h2
+      class="text-2xl md:text-5xl lg:text-5xl font-bold text-blue-500 dark:text-blue-300 z-50 line mb-8"
+    >
+      {{.title}}
+    </h2>
+    <p
+      class="text-xl text-zinc-500 tracking-wide dark:text-zinc-300 z-50 line mb-8"
+    >
+      {{.content}}
+    </p>
+
+    <div class="bg-zinc-50 dark:bg-zinc-800 p-8 rounded-lg">
+      <h4
+        class="text-2xl md:text-2xl lg:text-3xl font-bold text-blue-500 dark:text-blue-300 z-50 line mb-8"
+      >
+        {{.sub_title}}
+      </h4>
+      <ul>
+        {{range .items}}
+        <li class="mb-6 dark:text-zinc-300 opacity-100 flex items-center gap-4">
+          <i class="fa-solid fa-square-check"></i> {{.}}
+        </li>
+        {{end}}
+      </ul>
+    </div>
+  </div>
+  <div>
+    <img src="{{.image}}" alt="Image" class="h-full p-8 rounded-lg" />
+  </div>
+</section>
+{{end}}
+<!--End Hero Section-->
+
+<!--Icon Section-->
+{{with .Params.icon_section}}
+<section class="mt-32">
+  <h2
+    class="text-2xl md:text-5xl lg:text-5xl font-bold text-blue-500 dark:text-blue-300 z-50 line mb-8 text-center"
+  >
+    {{.title}}
+  </h2>
+  <p
+    class="text-xl text-zinc-500 tracking-wide dark:text-zinc-300 z-50 line mb-8 text-center"
+  >
+    {{.content}}
+  </p>
+  <div
+    class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center my-16"
+  >
+    {{range .items}}
+    <div class="text-center flex flex-col justify-center items-center gap-6">
+      <div
+        class="w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center"
+      >
+        <i class="{{.icon}} text-3xl text-white"> </i>
+      </div>
+      <h5
+        class="text-xl font-bold text-zinc-500 dark:text-zinc-300 z-50 line text-center"
+      >
+        {{.title}}
+      </h5>
+      <p class="text-xl text-zinc-400 z-50 line text-center">{{.content}}</p>
+    </div>
+    {{end}}
+  </div>
+</section>
+{{end}}
+<!--End Icon Section-->
+
+<!--CTA Section-->
+{{with .Params.cta_section}}
+<section
+  class="my-24 py-40 px-20 text-center bg-zinc-200 dark:bg-zinc-800 rounded-xl"
+>
+  <h2
+    class="text-2xl md:text-5xl lg:text-7xl font-bold text-blue-500 dark:text-blue-300 z-50 line mb-8 text-center"
+  >
+    {{.title}}
+  </h2>
+  <p
+    class="lg:text-3xl md:text-xl text-zinc-600 dark:text-zinc-200 z-50 line mb-16 text-center"
+  >
+    {{.content}}
+  </p>
+  <div>
+    {{with.btn}}
+    <a
+      href="{{.link}}"
+      class="bg-blue-400 py-4 px-6 rounded-xl text-2xl font-bold text-white"
+      >{{.label}}</a
+    >
+    {{end}}
+  </div>
+</section>
+{{end}}
+<!--End CTA Section-->
+
+<!--Bottom Section-->
+{{ with .Params.bottom_section}}
+<section
+  class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 justify-center items-center mb-16"
+>
+  <div>
+    <h2
+      class="text-2xl md:text-5xl lg:text-5xl font-bold text-blue-500 dark:text-blue-300 z-50 line mb-8"
+    >
+      {{.title}}
+    </h2>
+    <p
+      class="text-xl text-zinc-500 tracking-wide dark:text-zinc-300 z-50 line mb-8"
+    >
+      {{.content}}
+    </p>
+
+    <div class="bg-zinc-50 dark:bg-zinc-800 p-8 rounded-lg">
+      <h4
+        class="text-2xl md:text-2xl lg:text-3xl font-bold text-blue-500 dark:text-blue-300 z-50 line mb-8"
+      >
+        {{.sub_title}}
+      </h4>
+      <ul>
+        {{range .items}}
+        <li class="mb-6 dark:text-zinc-300 opacity-100 flex items-center gap-4">
+          <i class="fa-solid fa-square-check"></i> {{.}}
+        </li>
+        {{end}}
+      </ul>
+    </div>
+  </div>
+  <div>
+    <img src="{{.image}}" alt="Image" class="h-full p-8 rounded-lg" />
+  </div>
+</section>
+{{end}}
+<!--End Bottom Section-->
+
+<!--CTA Section-->
+{{with .Params.bottom_cta}}
+<section
+  class="my-24 py-32 px-20 text-center bg-zinc-200 dark:bg-zinc-800 rounded-xl"
+>
+  <h2
+    class="text-2xl md:text-xl lg:text-3xl font-bold text-zinc-600 dark:text-zinc-300 z-50 line mb-8 text-center"
+  >
+    {{.content}}
+  </h2>
+  <div>
+    {{with.btn}}
+    <a
+      href="{{.link}}"
+      class="bg-blue-400 py-4 px-6 rounded-xl text-2xl font-bold text-white"
+      >{{.label}}</a
+    >
+    {{end}}
+  </div>
+</section>
+{{end}}
+<!--End CTA Section-->
+{{end}}
