@@ -2,6 +2,9 @@ baseURL = 'https://docucollab-com.pages.dev/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 
+[permalinks]
+  blog = "/:slug/"
+  
 [menu]
   [[menu.main]]
     identifier = "home"
