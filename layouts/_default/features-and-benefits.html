@@ -1,107 +1,46 @@
 {{define "main"}}
 
-<!--Templates-->
-<div class="text-center py-10">
-  <h2 class="text-5xl text-zinc-700 dark:text-zinc-300 font-bold mb-12">
-    Features and Benefits
+<!--All in one section-->
+<div
+  class="dark:bg-zinc-800 py-10 rounded-xl justify-center items-center mb-16"
+>
+  <h2 class="text-4xl text-center dark:text-white">
+    <strong>Features and Benefits</strong>
   </h2>
 
-  <div class="grid lg:grid-cols-4 md:grid-cols-4 grid-cols-1 px-3 gap-3">
-    <!--Blue-->
-    <div class="mt-5 bg-white dark:bg-zinc-700 py-16 rounded-xl">
-      <h2 class="font-bold text-5xl text-blue-400 mb-12">
-        Interactive Proposal Template
-      </h2>
-      <a
-        href="/"
-        class="py-4 px-4 bg-blue-400 flex w-fit justify-center gap-3 rounded-lg hover:bg-blue-500 items-center mx-auto text-white transaction-speed"
-        ><i class="fa-solid fa-rocket"></i> Launch Template</a
+  <!--Content-->
+  {{with .Params.features}}
+  <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-16 p-5">
+    <!--Card 01-->
+    {{ range .items}}
+    <div
+      class="p-6 border rounded-xl bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition dark:border dark:border-zinc-800/50 dark:bg-zinc-800 dark:ring-0 dark:ring-white/10 dark:hover:border-blue-400 dark:hover:ring-white/20"
+    >
+      <div
+        class="md:flex lg:flex inline-block gap-6 lg:text-left md:text-left sm:text-center text-center"
       >
+        <div class="img">
+          <i
+            class="{{.icon}} text-white text-3xl p-3 bg-blue-400 rounded-full w-14 h-14 flex justify-center items-center"
+          ></i>
+        </div>
+        <div class="content lg:mt-0 md:mt-0 mt-3">
+          <h4 class="dark:text-white text-lg font-semibold leading-tight">
+            {{.title}}
+          </h4>
+          <br />
+          <p class="dark:text-gray-100">
+            <strong>{{.subtitle}}</strong>
+          </p>
+          <br />
+          <p class="dark:text-gray-100">{{.content}}</p>
+        </div>
+      </div>
     </div>
-
-    <!--Teal-->
-    <div class="mt-5 bg-white dark:bg-zinc-700 py-16 rounded-xl">
-      <h2 class="font-bold text-5xl text-teal-400 mb-12">
-        Interactive Proposal Template
-      </h2>
-      <a
-        href="/"
-        class="py-4 px-4 bg-teal-400 flex w-fit justify-center gap-3 rounded-lg hover:bg-teal-500 items-center mx-auto text-white transaction-speed"
-        ><i class="fa-solid fa-rocket"></i> Launch Template</a
-      >
-    </div>
-
-    <!--Orange-->
-    <div class="mt-5 bg-white dark:bg-zinc-700 py-16 rounded-xl">
-      <h2 class="font-bold text-5xl text-orange-400 mb-12">
-        Interactive Proposal Template
-      </h2>
-      <a
-        href="/"
-        class="py-4 px-4 bg-orange-400 flex w-fit justify-center gap-3 rounded-lg hover:bg-orange-500 items-center mx-auto text-white"
-        ><i class="fa-solid fa-rocket"></i> Launch Template</a
-      >
-    </div>
-
-    <!--Pink-->
-    <div class="mt-5 bg-white dark:bg-zinc-700 py-16 rounded-xl">
-      <h2 class="font-bold text-5xl text-pink-400 mb-12">
-        Interactive Proposal Template
-      </h2>
-      <a
-        href="/"
-        class="py-4 px-4 bg-pink-400 flex w-fit justify-center gap-3 rounded-lg hover:bg-pink-500 items-center mx-auto text-white"
-        ><i class="fa-solid fa-rocket"></i> Launch Template</a
-      >
-    </div>
-
-    <!--Blue-->
-    <div class="mt-5 bg-white dark:bg-zinc-700 py-16 rounded-xl">
-      <h2 class="font-bold text-5xl text-blue-400 mb-12">
-        Interactive Proposal Template
-      </h2>
-      <a
-        href="/"
-        class="py-4 px-4 bg-blue-400 flex w-fit justify-center gap-3 rounded-lg hover:bg-blue-500 items-center mx-auto text-white transaction-speed"
-        ><i class="fa-solid fa-rocket"></i> Launch Template</a
-      >
-    </div>
-
-    <!--Teal-->
-    <div class="mt-5 bg-white dark:bg-zinc-700 py-16 rounded-xl">
-      <h2 class="font-bold text-5xl text-teal-400 mb-12">
-        Interactive Proposal Template
-      </h2>
-      <a
-        href="/"
-        class="py-4 px-4 bg-teal-400 flex w-fit justify-center gap-3 rounded-lg hover:bg-teal-500 items-center mx-auto text-white transaction-speed"
-        ><i class="fa-solid fa-rocket"></i> Launch Template</a
-      >
-    </div>
-
-    <!--Orange-->
-    <div class="mt-5 bg-white dark:bg-zinc-700 py-16 rounded-xl">
-      <h2 class="font-bold text-5xl text-orange-400 mb-12">
-        Interactive Proposal Template
-      </h2>
-      <a
-        href="/"
-        class="py-4 px-4 bg-orange-400 flex w-fit justify-center gap-3 rounded-lg hover:bg-orange-500 items-center mx-auto text-white"
-        ><i class="fa-solid fa-rocket"></i> Launch Template</a
-      >
-    </div>
-
-    <!--Pink-->
-    <div class="mt-5 bg-white dark:bg-zinc-700 py-16 rounded-xl">
-      <h2 class="font-bold text-5xl text-pink-400 mb-12">
-        Interactive Proposal Template
-      </h2>
-      <a
-        href="/"
-        class="py-4 px-4 bg-pink-400 flex w-fit justify-center gap-3 rounded-lg hover:bg-pink-500 items-center mx-auto text-white"
-        ><i class="fa-solid fa-rocket"></i> Launch Template</a
-      >
-    </div>
+    {{end}}
+    <!--End card-->
   </div>
+  {{end}}
 </div>
+<!--END All in one section-->
 {{end}}
